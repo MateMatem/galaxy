@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('mars.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    @keyframes astronautAnimation {
+      0% { left: -200px; }
+      100% { left: calc(100vw + 200px); }
+    }
+
+    .astronaut {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: astronautAnimation 13s linear infinite;
+    }
+    @keyframes alienAnimation {
+      0% { transform: translateX(-100px); }
+      100% { transform: translateX(calc(100vw + 100px)); }
+    }
+
+    .alien {
+      position: absolute;
+      top: 50%;
+      left: -100px;
+      transform: translateY(-50%);
+      animation: alienAnimation 15s linear infinite;
+    }
+
+  </style>
+
+
+
+</head>
+
+
+
+<body>
+    <img class="astronaut" src="astronaut.png" alt="astronaut">
+    <img class="alien" src="sayhi.png" alt="Alien">
+</body>
+</html>
